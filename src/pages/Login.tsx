@@ -14,9 +14,9 @@ const Login = () => {
       <div className="relative bg-primary text-primary-foreground p-12 hidden lg:flex flex-col justify-between overflow-hidden">
         <Link to="/" className="flex items-center gap-3 relative z-10">
           <div className="w-11 h-11 rounded-full bg-gold/20 flex items-center justify-center">
-            <span className="font-display text-gold text-2xl font-700 leading-none">9¾</span>
+            <span className="font-display text-gold text-xl font-700 leading-none flex items-center justify-center w-full h-full text-center">9¾</span>
           </div>
-          <div className="font-display text-2xl font-600">9 ¾</div>
+          <div className="text-[11px] tracking-[0.3em] uppercase text-primary-foreground/60">железные дороги</div>
         </Link>
 
         <div className="relative z-10">
@@ -29,7 +29,7 @@ const Login = () => {
           </p>
         </div>
 
-        <div className="text-primary-foreground/40 text-sm relative z-10">© 2026 9 и три четверти</div>
+        <div className="text-primary-foreground/40 text-sm relative z-10">© 2026 9 ¾</div>
         <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-gold/10 blur-3xl" />
       </div>
 
