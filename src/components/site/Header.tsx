@@ -14,10 +14,7 @@ const Header = () => {
           <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center">
             <span className="font-display text-gold text-2xl font-700 leading-none">9¾</span>
           </div>
-          <div className="text-left leading-tight">
-            <div className="font-display text-2xl font-600 text-primary">9 ¾</div>
-            <div className="text-[11px] tracking-[0.3em] uppercase text-muted-foreground">железные дороги</div>
-          </div>
+          <div className="text-[11px] tracking-[0.3em] uppercase text-muted-foreground">железные дороги</div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
