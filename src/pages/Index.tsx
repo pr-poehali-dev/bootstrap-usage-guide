@@ -28,18 +28,30 @@ const Index = () => {
           </div>
 
           <div className="relative animate-scale-in">
-            <div className="aspect-square rounded-[2rem] bg-primary p-10 flex flex-col justify-between overflow-hidden">
-              <div className="flex justify-between items-start">
+            <div className="rounded-[2rem] bg-primary p-10 flex flex-col gap-8 overflow-hidden">
+              <div className="flex justify-between items-center">
                 <div className="text-gold font-display text-5xl font-700">9¾</div>
                 <Icon name="TrainFront" size={48} className="text-gold animate-train-move" />
               </div>
               <div className="space-y-1">
                 <div className="text-primary-foreground/50 text-xs tracking-widest uppercase">Направление</div>
                 <div className="text-primary-foreground font-display text-4xl font-500">Лондон — Хогвартс</div>
-                <div className="flex items-center gap-3 text-primary-foreground/70 text-sm pt-2">
-                  <Icon name="Clock" size={16} className="text-gold" /> Отправление 11:00
-                  <Icon name="MapPin" size={16} className="text-gold ml-2" /> Платформа 9¾
+              </div>
+              <div className="border-t border-primary-foreground/10 pt-6 grid grid-cols-2 gap-4">
+                <div>
+                  <div className="text-primary-foreground/40 text-xs uppercase tracking-widest mb-1">Отправление</div>
+                  <div className="text-primary-foreground font-display text-2xl font-600">11:00</div>
+                  <div className="text-primary-foreground/60 text-sm">Лондон Кингс-Кросс</div>
                 </div>
+                <div>
+                  <div className="text-primary-foreground/40 text-xs uppercase tracking-widest mb-1">Прибытие</div>
+                  <div className="text-primary-foreground font-display text-2xl font-600">15:45</div>
+                  <div className="text-primary-foreground/60 text-sm">Хогсмид</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 bg-primary-foreground/5 rounded-xl px-4 py-3">
+                <Icon name="MapPin" size={16} className="text-gold shrink-0" />
+                <span className="text-primary-foreground/70 text-sm">Платформа 9¾ · Вагон 7, место 12</span>
               </div>
             </div>
           </div>
