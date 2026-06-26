@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center">
-            <span className="font-display text-gold text-2xl font-700 leading-none">9¾</span>
+            <span className="font-display text-gold text-xl font-700 leading-none flex items-center justify-center w-full h-full text-center">9¾</span>
           </div>
           <div className="text-[11px] tracking-[0.3em] uppercase text-muted-foreground">железные дороги</div>
         </Link>
