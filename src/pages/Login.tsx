@@ -16,7 +16,7 @@ const Login = () => {
           <div className="w-11 h-11 rounded-full bg-gold/20 flex items-center justify-center">
             <span className="font-display text-gold text-2xl font-700 leading-none">9¾</span>
           </div>
-          <div className="font-display text-2xl font-600">9 и три четверти</div>
+          <div className="font-display text-2xl font-600">9 ¾</div>
         </Link>
 
         <div className="relative z-10">

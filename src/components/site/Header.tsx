@@ -15,7 +15,7 @@ const Header = () => {
             <span className="font-display text-gold text-2xl font-700 leading-none">9¾</span>
           </div>
           <div className="text-left leading-tight">
-            <div className="font-display text-2xl font-600 text-primary">9 и три четверти</div>
+            <div className="font-display text-2xl font-600 text-primary">9 ¾</div>
             <div className="text-[11px] tracking-[0.3em] uppercase text-muted-foreground">железные дороги</div>
           </div>
         </Link>
