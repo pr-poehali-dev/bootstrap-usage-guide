@@ -4,33 +4,35 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 33% 98%;
+    --foreground: 222 47% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 224 64% 18%;
+    --primary-foreground: 40 33% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 224 64% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 22% 93%;
+    --muted-foreground: 222 14% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 70% 52%;
+    --accent-foreground: 224 64% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 33% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 38 24% 88%;
+    --input: 38 24% 88%;
+    --ring: 38 70% 52%;
+
+    --gold: 38 70% 52%;
 
     --radius: 0.5rem;
 
@@ -97,5 +99,37 @@
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+  .grain {
+    background-image:
+      radial-gradient(
+        circle at 20% 20%,
+        hsl(38 70% 52% / 0.06) 0%,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 80% 0%,
+        hsl(224 64% 18% / 0.05) 0%,
+        transparent 45%
+      );
+  }
+  .ticket-notch {
+    -webkit-mask-image:
+      radial-gradient(circle at left center, transparent 12px, black 13px),
+      radial-gradient(circle at right center, transparent 12px, black 13px);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
   }
 }
